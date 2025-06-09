@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <h1>phone book</h1>
+
+    </header>
+    <main >
+        <div class="top-bar">
+            <input type="text" placeholder="Search contacts..." class="search-input">
+            <button class="add-btn" onclick="openModal()">+</button>
+        </div>
+        <div class="members">
+       <ul id="member1">
+       <li> <button class="delete " ><img src="./images/deletIcon.png" alt="vvv" width="20" height="20"></button></li>
+       <li> <button class="edit"><img src="./images/edit_icon.png" alt="vvv" width="20" height="20"></button></li>
+       <li> <button class="details"><img src="./images/details_icon.png" alt="vvv" width="20" height="20"></button></li>
+       <li class="images"><img src="./images/person1.jpg" alt="Ethan Carter" width="80" height="80"></li>
+       <li class="names">Ethan Carter</li>
+
+       </ul>
+
+       <ul id="member2">
+        <li> <button class="delete"><img src="./images/deletIcon.png" alt="vvv" width="20" height="20"></button></li>
+        <li> <button class="edit"><img src="./images/edit_icon.png" alt="vvv" width="20" height="20"></button></li>
+        <li> <button class="details"><img src="./images/details_icon.png" alt="vvv" width="20" height="20"></button></li>
+        <li class="images"><img src="./images/person1.jpg" alt="Ethan Carter" width="80" height="80"></li>
+        <li class="names">Ethan Carter</li>
+ 
+        </ul>
+
+        <ul id="member3">
+            <li> <button class="delete"><img src="./images/deletIcon.png" alt="vvv" width="20" height="20"></button></li>
+            <li> <button class="edit"><img src="./images/edit_icon.png" alt="vvv" width="20" height="20"></button></li>
+            <li> <button class="details"><img src="./images/details_icon.png" alt="vvv" width="20" height="20"></button></li>
+            <li class="images"><img src="./images/person1.jpg" alt="Ethan Carter" width="80" height="80"></li>
+            <li class="names">Ethan Carter</li>
+     
+            </ul>
+
+            <ul id="member4">
+                <li> <button class="delete"><img src="./images/deletIcon.png" alt="vvv" width="20" height="20"></button></li>
+                <li> <button class="edit"><img src="./images/edit_icon.png" alt="vvv" width="20" height="20"></button></li>
+                <li> <button class="details"><img src="./images/details_icon.png" alt="vvv" width="20" height="20"></button></li>
+                <li class="images"><img src="./images/person1.jpg" alt="Ethan Carter" width="80" height="80"></li>
+                <li class="names">Ethan Carter</li>
+         
+                </ul>
+
+                <ul id="member5">
+                    <li> <button class="delete"><img src="./images/deletIcon.png" alt="vvv" width="20" height="20"></button></li>
+                    <li> <button class="edit"><img src="./images/edit_icon.png" alt="vvv" width="20" height="20"></button></li>
+                    <li> <button class="details"><img src="./images/details_icon.png" alt="vvv" width="20" height="20"></button></li>
+                    <li class="images"><img src="./images/person1.jpg" alt="Ethan Carter" width="80" height="80"></li>
+                    <li class="names">Ethan Carter</li>
+             
+                    </ul>
+                </div>
+                   
+                    <div id="contactModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <h2>Add New Contact</h2>
+                          <form id="contactForm">
+                            
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" required>
+                      
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" required>
+                      
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" required>
+                      
+                            <label for="city">City:</label>
+                            <input type="text" id="city" required>
+                      
+                            <label for="imageUrl">Image URL (optional):</label>
+                            <input type="url" id="imageUrl">
+                      
+                            <button type="submit" id="Save">Save</button>
+                          </form>
+                        </div>
+                    </div>
+                    <div id="detailsModal" class="modal" style="display:none;">
+                        <div class="modal-content">
+                          <button class="close" onclick="closeDetailsModal()">&times;</button>
+                          <h2>Member details</h2>
+                          <p id="detailsContent"></p>
+                        </div>
+                      </div>
+                      
+    </main>
+    <footer>
+        <h3>&copy; 2025 Elihai Afuta & Daniel Elimelech. Built with care. All rights reserved.</h3>
+    </footer>
+</div>
+<script src="js.js"></script>
+
+</body>
+
+
+</html>

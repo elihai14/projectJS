@@ -25,8 +25,8 @@ const members = [
 const memberList = document.getElementById('members');
 function createMemberElement(item,index){
  const li = document.createElement('li');
-    li.innerHTML =  `<img src="${item.imgSrc}" alt="" width="80" height="80">${item.name} <button class="details"> <img src="./images/details_icon.png" alt="" width="20" height="20"></button>
-                <button class="edit"> <img src="./images/edit_icon.png" alt="" width="20" height="20"></button> <button class="delete"><img src="./images/deletIcon.png" alt="" width="20" height="20"></button>`
+    li.innerHTML =  `<img src="${item.imgSrc}" alt="" width="80" height="80">${item.name} <button class="details"> <img src="details_icon.png" alt="" width="20" height="20"></button>
+                <button class="edit"> <img src="edit_icon.png" alt="" width="20" height="20"></button> <button class="delete"><img src="deletIcon.png" alt="" width="20" height="20"></button>`
     li.setAttribute('data-id', index)
                 return li;
 }

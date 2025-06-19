@@ -4,21 +4,21 @@ const members = [
         age: 22,
         address: "Nahariya",
         number: "0523336625",
-        imgSrc: "./images/person1.jpg"
+        imgSrc: "person1.jpg"
     },
     {
         name: "Ram Turjman",
         age: 36,
         address: "Nahariya",
         number: "0552263345",
-        imgSrc: "./images/person1.jpg"
+        imgSrc: "person1.jpg"
     },
     {
         name: "Rafi Refael",
         age: 25,
         address: "Nahariya",
         number: "0502525886",
-        imgSrc: "./images/person1.jpg"
+        imgSrc: "person1.jpg"
     }
 ];
 

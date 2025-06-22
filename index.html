@@ -17,12 +17,12 @@
         </div>
         <div >
             <ul id="members">
-<!--               <li>
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ben_Adam_%286925%29.jpg" alt="" width="80" height="80">Moshe Cohen <button class="details"> <img src="./images/details_icon.png" alt="" width="20" height="20"></button>
-                <button class="edit"> <img src="./images/edit_icon.png" alt="" width="20" height="20"></button> <button class="delete"><img src="./images/deletIcon.png" alt="" width="20" height="20"></button>
-              </li>
+              <!-- <li>
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ben_Adam_%286925%29.jpg" alt="" width="80" height="80">Moshe Cohen <button class="details"> <img src="details_icon.png" alt="" width="20" height="20"></button>
+                <button class="edit"> <img src="edit_icon.png" alt="" width="20" height="20"></button> <button class="delete"><img src="deletIcon.png" alt="" width="20" height="20"></button>
+              </li> -->
 
-              <li>
+              <!-- <li>
                 <img src="./images/person1.jpg" alt="" width="80" height="80">Haim Levi <button class="details"> <img src="./images/details_icon.png" alt="" width="20" height="20"></button>
                <button class="edit"> <img src="./images/edit_icon.png" alt="" width="20" height="20"></button> <button class="delete"><img src="./images/deletIcon.png" alt="" width="20" height="20"></button>
              </li>
@@ -36,16 +36,21 @@
     </main>
     <div id="detailsModal" class="modal" style="display:none;">
         <div class="modal-content">
-          <button class="close" >&times;</button>
-          <h2>Member details</h2>
-          <p id="detailsContent"></p>
+          <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
+          <div id="modal__inner">
+          <!-- <h2 id="memberName"></h2>
+          <p id="phoneNumber"></p> -->
+          <!-- <p id="address"></p>
+          <p id="mailAddress"></p>
+          <p id="text"></p> -->
+        </div>
         </div>
       </div>
       <footer>
         <h3>&copy; 2025 Elihai Afuta & Daniel Elimelech. Built with care. All rights reserved.</h3>
 
       </footer>
-    <script src="js.js"></script>
+      <script src="js.js"></script>
 
 </body>
 </html>

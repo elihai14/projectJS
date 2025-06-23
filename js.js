@@ -5,7 +5,7 @@ const members = [
         age: 22,
         address: "Nahariya",
         number: "0523336625",
-        imgSrc: "./images/person1.jpg",
+        imgSrc: "person1.jpg",
         mail: "rafi@gmail.com",
         text: "hi world"
 
@@ -15,7 +15,7 @@ const members = [
         age: 36,
         address: "Nahariya",
         number: "0552263345",
-        imgSrc: "./images/person1.jpg",
+        imgSrc: "person1.jpg",
         mail: "rafi@gmail.com",
         text: "hello world"
 
@@ -26,7 +26,7 @@ const members = [
         age: 25,
         address: "Nahariya",
         number: "0502525886",
-        imgSrc: "./images/person1.jpg",
+        imgSrc: "person1.jpg",
         mail: "rafi@gmail.com",
         text: "HELLO world"
 
@@ -37,9 +37,9 @@ const memberList = document.getElementById('members');
 function createMemberElement(item,index){
  const li = document.createElement('li');
     li.innerHTML =  `<img src="${item.imgSrc}" alt="" width="80" height="80">${item.name} 
-    <button class="details"> <img src="./images/details_icon.png" alt="" width="20" height="20"></button>
-    <button class="edit"> <img src="./images/edit_icon.png" alt="" width="20" height="20"></button> 
-    <button class="delete"><img src="./images/deletIcon.png" alt="" width="20" height="20"></button>`
+    <button class="details"> <img src="details_icon.png" alt="" width="20" height="20"></button>
+    <button class="edit"> <img src="edit_icon.png" alt="" width="20" height="20"></button> 
+    <button class="delete"><img src="deletIcon.png" alt="" width="20" height="20"></button>`
     li.setAttribute('data-id',index);
 
                 return li;

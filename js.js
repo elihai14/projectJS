@@ -33,7 +33,7 @@ const members = [
         address: "Nahariya",
         number: "0563325878",
         mail: "zeev@gmail.com",
-        text: "son of a bitch ",
+        text: "i love javaScript ",
         favorite: false 
 
 
@@ -312,3 +312,4 @@ memberList.addEventListener('click', (e)=> {
     })
 
 //#endregion
+

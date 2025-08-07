@@ -2,22 +2,29 @@ h1 {
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
     font-size: 3em;
-    margin: 30px 0 ;
+    margin: 5% 0 ;
     color: #1C1C1C;
   }
-
+label{
+  text-align: left;
+}
 
   
   button { 
     padding: 8px;
     border-radius: 50%;
-    margin: 0 4px;
     transition: background-color 0.3s;
     cursor: pointer;
     background-color: #b3d6f2; 
-    float: right;
     margin: 1.5%;
 
+}
+.buttons{
+  display: flex;
+  gap: 14px;
+  position: relative;
+  top: -2px;
+  margin-right: 14px;
 }
 main{
     background-color: #ffffff;
@@ -26,12 +33,51 @@ main{
     border: 2px solid;
     flex-grow: 1;
 }
+
+.name {
+  font-weight: bold;
+  min-width: 120px;
+  padding-left: 4px;
+}
+  .info {
+    display: flex;
+    gap: 24px; 
+    align-items: center;
+    flex: 1; 
+  }
+
+.phone {
+  color: gray;
+  font-size: 22px;
+  min-width: 120px;
+  text-align: left;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  direction: ltr;
+}
 body{
     background: linear-gradient(to bottom, #E9F9EF ,#D1F2E8);
 }
-li{
+.mouseOverLi{
+  list-style-type: none;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #cbc1c1;
+
+}
+.mouseOutLi{
     list-style-type: none;
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 
 }
 footer{
@@ -40,29 +86,21 @@ footer{
     box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
     text-align: center;
 }
-img{
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 2%;
-    margin-right: 2%;
-}
+
 
 .modal-content {
     background-color: #fff;
-    margin: 10% auto;
+    margin: 5% auto;
+    max-width: 450px;
+    max-height: 450px;
     padding: 30px;
     border-radius: 15px;
     width: 90%;
-    max-width: 400px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     text-align: center;
+
   }
   
-  
-  
-  
-  
- 
   .close {
     color: #aaa;
     float: right;
@@ -86,21 +124,9 @@ img{
     font-size: 16px;
   }
   
-  .add-btn {
-    background-color: #2E7D32; 
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    width: 44px;
-    height: 44px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
   
-  .add-btn:hover {
-    background-color: #388E3C;
-  }
+  
+  
   
   .modal {
     display: none; 
@@ -114,48 +140,68 @@ img{
     background-color: rgba(0, 0, 0, 0.6); /* רקע כהה חצי שקוף */
   }
   
-  /* התוכן בתוך המודל */
-  .modal-content{
-    background-color: #fff;
-    margin: 5% auto;
-    padding: 50px 30px 20px 30px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 450px;
-    max-height: 450px;
-
-    position: relative;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  /* כפתור סגירה */
-  #closeModal {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  #closeModal:hover {
-    color: crimson;
-  }
-  
-  /* תוכן פנימי */
-  .modal__inner {
-    text-align: center;
-  }
   
   
   
   
-  #modalText {
-    font-size: 25px;
-    line-height: 1.6;
-    color: #444;
-  }
+  
+  
+  
+  
+  
+  
+  
+  
   .modal-p{
     font-size: 2em;
+    
   }
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* כפתור סגירה (×) */
+.modal-content span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.modal-content span:hover {
+  color: #333;
+}
+
+/* כותרת */
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+
+main.darkMode{
+  background-color:black;
+  color: #e0e0e0;
+}
+
+
+
